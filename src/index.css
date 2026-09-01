@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* High-contrast visible text for all inputs, selects, and textareas */
+input,
+select,
+textarea {
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b !important;
+  -webkit-text-fill-color: #64748b;
+  opacity: 1;
+}
+
+/* Ensure options in select dropdowns are crisp dark text on white */
+select option {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+}
+
+/* Autofill styling fix to avoid invisible text */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0f172a !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  header, footer, #validation-alerts-bar, .print\:hidden {
+    display: none !important;
+  }
+
+  #itinerary-quote-document {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+

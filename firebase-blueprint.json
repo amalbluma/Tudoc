@@ -1,0 +1,40 @@
+{
+  "company_settings": {
+    "type": "collection",
+    "description": "Global company settings",
+    "document_schema": {
+      "companyName": "string",
+      "companyLogoUrl": "string",
+      "contactEmail": "string",
+      "contactPhone": "string",
+      "websiteUrl": "string"
+    },
+    "documents": {
+      "default": {
+        "companyName": "Tusafiri Africa Safaris",
+        "companyLogoUrl": "",
+        "contactEmail": "info@tusafiriafrica.com",
+        "contactPhone": "+254 724 046 463",
+        "websiteUrl": "https://tusafiriafrica.com"
+      }
+    }
+  },
+  "users": {
+    "type": "collection",
+    "description": "Users who have registered for the app.",
+    "document_schema": {
+      "email": "string",
+      "role": "string",
+      "createdAt": "timestamp"
+    }
+  },
+  "images": {
+    "type": "collection",
+    "description": "Uploaded images as data URLs",
+    "document_schema": {
+      "name": "string",
+      "dataUrl": "string",
+      "createdAt": "timestamp"
+    }
+  }
+}

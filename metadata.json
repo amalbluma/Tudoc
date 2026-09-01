@@ -1,0 +1,6 @@
+{
+  "name": "Tusafiri Africa Safaris Master Costing Engine & Itinerary Quoter",
+  "description": "Master safari costing spreadsheet engine with STO rates, park fee databases for Kenya & Tanzania, AI contract ingestion, draft auto-save engine with point-in-time snapshots, interactive margin controls, scenario auditing, and linked client quotation generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
